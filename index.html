@@ -21,30 +21,30 @@
   --r:8px;--sh:0 2px 8px rgba(0,0,0,.10)
 }
 html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-serif;font-size:16px;min-height:100%}
- 
+
 /* HEADER */
 .hdr{background:var(--blue);padding:0 16px;display:flex;align-items:center;justify-content:space-between;height:52px;box-shadow:0 2px 6px rgba(0,0,0,.15);position:sticky;top:0;z-index:50}
 .hdr::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(to right, #c41e14 33.3%, #0f0f0f 33.3%, #0f0f0f 66.6%, #f0be00 66.6%)}
 .logo{font-family:'PT Sans Narrow',sans-serif;font-size:20px;font-weight:700;color:#fff;display:flex;align-items:center;gap:8px}
 .hdr-date{font-size:12px;color:rgba(255,255,255,.75)}
 .s-btn{background:rgba(255,255,255,.15);border:none;border-radius:6px;color:#fff;font-size:18px;width:36px;height:36px;cursor:pointer;display:flex;align-items:center;justify-content:center}
- 
+
 /* LAYOUT */
 #app{max-width:600px;margin:0 auto;padding:0 0 72px}
 .section{padding:14px 14px 0}
 .sec-title{font-size:12px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border)}
- 
+
 /* BANNER */
 .banner{margin:14px 14px 0;background:var(--blue-lt);border:1px solid #b3cde8;border-left:4px solid var(--blue);border-radius:var(--r);padding:12px 14px;display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--text2);line-height:1.5}
 .banner.warn{background:#fff8e8;border-color:#f5d78e;border-left-color:var(--orange)}
 .banner.ok{background:#edf7f0;border-color:#a8d8b5;border-left-color:var(--green)}
 .banner b{color:var(--text)}
 .b-ico{font-size:20px;flex-shrink:0;margin-top:1px}
- 
+
 /* NOTIFY BAR */
 .nbar{margin:10px 14px 0;background:#fff;border:1px solid #b3cde8;border-radius:var(--r);padding:10px 14px;display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text2)}
 .nbar button{margin-left:auto;flex-shrink:0;background:var(--blue);color:#fff;border:none;border-radius:5px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:'PT Sans',sans-serif}
- 
+
 /* ORG CARD */
 .card{background:#fff;border:1px solid var(--border);border-radius:var(--r);margin-bottom:10px;box-shadow:var(--sh);overflow:hidden}
 .card-hdr{padding:14px 16px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;user-select:none;transition:background .15s}
@@ -69,13 +69,13 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
 .badge.idle{background:var(--blue-lt);color:var(--blue)}
 .card-body{display:none;border-top:1px solid var(--border);padding:16px;background:#fafcff}
 .card-body.open{display:block}
- 
+
 /* TARIFF TABS */
 .tabs{display:flex;margin-bottom:16px;border-radius:6px;overflow:hidden;border:1px solid var(--border)}
 .tab{flex:1;padding:9px;text-align:center;font-size:13px;font-weight:700;font-family:'PT Sans',sans-serif;background:#fff;color:var(--text2);border:none;cursor:pointer;transition:all .15s}
 .tab.active{background:var(--blue);color:#fff}
 .tabs-label{font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.07em;margin-bottom:6px}
- 
+
 /* METER */
 .m-block{margin-bottom:14px}
 .m-label{font-size:13px;font-weight:700;color:var(--text2);margin-bottom:3px}
@@ -90,14 +90,14 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
 .m-inp:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(26,115,200,.12)}
 .m-inp.filled{border-color:#2e9e4f;color:#2e9e4f;border-left:3px solid #f0be00}
 .m-unit{font-size:13px;color:var(--text3);min-width:42px;font-weight:700}
- 
+
 /* BUTTONS */
 .btn-main{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:14px;background:var(--blue);color:#fff;font-weight:700;font-size:15px;border:none;border-radius:6px;padding:13px;cursor:pointer;text-decoration:none;font-family:'PT Sans',sans-serif;transition:background .2s;box-shadow:0 2px 6px rgba(26,115,200,.25)}
 .btn-main:hover{background:var(--blue-dk)}
 .btn-sec{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:8px;background:#fff;color:var(--blue);font-weight:700;font-size:14px;border:1.5px solid var(--blue);border-radius:6px;padding:11px;cursor:pointer;text-decoration:none;font-family:'PT Sans',sans-serif;transition:background .2s}
 .btn-sec:hover{background:var(--blue-lt)}
 .hint{font-size:12px;color:var(--text3);margin-top:10px;text-align:center;line-height:1.6;background:#f5f8fc;border-radius:6px;padding:8px 12px}
- 
+
 /* BOTTOM NAV */
 .bnav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--border);display:flex;justify-content:space-around;padding:6px 0 max(6px,env(safe-area-inset-bottom));z-index:100;box-shadow:0 -2px 8px rgba(0,0,0,.08)}
 .nb{display:flex;flex-direction:column;align-items:center;gap:2px;background:none;border:none;cursor:pointer;color:var(--text3);font-size:11px;padding:4px 20px;font-family:'PT Sans',sans-serif;font-weight:700;transition:color .2s}
@@ -105,11 +105,11 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
 .nb.active{color:var(--blue)}
 .nb.active .i{position:relative}
 .nb.active .i::after{content:'';position:absolute;top:0;right:-2px;width:6px;height:6px;background:#c41e14;border-radius:50%}
- 
+
 /* PAGES */
 .page{display:none}
 .page.active{display:block}
- 
+
 /* HISTORY */
 .h-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:14px;margin-bottom:10px;box-shadow:var(--sh)}
 .h-title{font-size:13px;font-weight:700;color:var(--blue);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--border);text-transform:capitalize}
@@ -118,13 +118,13 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
 .h-lbl{color:var(--text2)}
 .h-val{font-weight:700;color:var(--green);font-family:'PT Sans Narrow',sans-serif;font-size:15px}
 .no-hist{text-align:center;color:var(--text3);font-size:14px;padding:30px 0}
- 
+
 /* INFO */
 .i-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:16px;margin-bottom:10px;box-shadow:var(--sh)}
 .i-title{font-size:14px;font-weight:700;color:var(--blue);margin-bottom:10px}
 .i-card p{font-size:14px;color:var(--text2);line-height:1.8}
 .i-card b{color:var(--text)}
- 
+
 /* MODAL */
 .overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:200;align-items:flex-end;justify-content:center}
 .overlay.open{display:flex}
@@ -138,7 +138,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
 .field input:focus,.field select:focus{border-color:var(--blue)}
 .save-btn{width:100%;background:var(--blue);color:#fff;font-weight:700;font-size:15px;font-family:'PT Sans',sans-serif;border:none;border-radius:6px;padding:13px;cursor:pointer;margin-top:6px}
 .save-btn:hover{background:var(--blue-dk)}
- 
+
 /* TOAST */
 .toast{position:fixed;top:62px;left:50%;transform:translateX(-50%) translateY(-20px);background:var(--green);color:#fff;font-weight:700;font-size:14px;padding:10px 22px;border-radius:6px;z-index:999;transition:all .3s;opacity:0;pointer-events:none;box-shadow:0 4px 16px rgba(0,0,0,.13)}
 .toast.show{transform:translateX(-50%) translateY(0);opacity:1}
@@ -146,7 +146,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
 </head>
 <body>
 <div class="toast" id="toast"></div>
- 
+
 <!-- ШАПКА -->
 <div class="hdr">
   <div class="logo">
@@ -171,16 +171,16 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
     <button class="s-btn" onclick="openS()" title="Настройки">⚙️</button>
   </div>
 </div>
- 
+
 <div id="app">
- 
+
   <!-- ══ ГЛАВНАЯ ══ -->
   <div class="page active" id="page-main">
     <div id="banner"></div>
     <div id="nbar"></div>
     <div class="section">
       <div class="sec-title">Передача показаний</div>
- 
+
       <!-- ЭЛЕКТРИЧЕСТВО -->
       <div class="card">
         <div class="card-hdr open" id="hdr-tek" onclick="toggle('tek')">
@@ -201,13 +201,13 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
           </div>
         </div>
         <div class="card-body open" id="body-tek">
- 
+
           <div class="tabs-label">Тип счётчика</div>
           <div class="tabs">
             <button class="tab active" id="t-single" onclick="setTariff('single')">Один тариф</button>
             <button class="tab" id="t-two" onclick="setTariff('two')">День / Ночь (Т1 / Т2)</button>
           </div>
- 
+
           <!-- один тариф -->
           <div id="ms-single">
             <div class="m-block">
@@ -220,7 +220,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
               </div>
             </div>
           </div>
- 
+
           <!-- два тарифа -->
           <div id="ms-two" style="display:none">
             <div class="m-block">
@@ -242,10 +242,10 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
               </div>
             </div>
           </div>
- 
+
           <div class="btn-wrap">
             <div class="btn-top"></div>
-            <a class="btn-inner" href="https://lk.tek63.ru/" target="_blank" rel="noopener">
+            <a class="btn-inner" href="https://lk.tek63.ru/user/values" target="_blank" rel="noopener">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -257,7 +257,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
           </div>
         </div>
       </div>
- 
+
       <!-- ВОДА -->
       <div class="card">
         <div class="card-hdr open" id="hdr-esp" onclick="toggle('esp')">
@@ -279,7 +279,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
           </div>
         </div>
         <div class="card-body open" id="body-esp">
- 
+
           <div class="m-block">
             <div class="m-label">🔥 Горячая вода</div>
             <div class="m-prev" id="prev-esp_hot"></div>
@@ -289,7 +289,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
               <div class="m-unit">м³</div>
             </div>
           </div>
- 
+
           <div class="m-block">
             <div class="m-label">💧 Холодная вода</div>
             <div class="m-prev" id="prev-esp_cold"></div>
@@ -299,11 +299,11 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
               <div class="m-unit">м³</div>
             </div>
           </div>
- 
- 
+
+
           <div class="btn-wrap">
             <div class="btn-top"></div>
-            <a class="btn-inner" href="href="https://esplus.kvp24.ru/accounting" target="_blank" rel="noopener">
+            <a class="btn-inner" href="https://esplus.kvp24.ru/login" target="_blank" rel="noopener">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -315,10 +315,10 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
           </div>
         </div>
       </div>
- 
+
     </div>
   </div>
- 
+
   <!-- ══ ИСТОРИЯ ══ -->
   <div class="page" id="page-history">
     <div class="section" style="padding-top:16px">
@@ -329,12 +329,12 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
       <div id="histContent"></div>
     </div>
   </div>
- 
+
   <!-- ══ О ПРИЛОЖЕНИИ ══ -->
   <div class="page" id="page-info">
     <div class="section" style="padding-top:16px">
       <div class="sec-title">О приложении</div>
- 
+
       <div class="i-card">
         <div class="i-title">📅 Сроки передачи показаний</div>
         <p>
@@ -344,7 +344,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
           С 15 по 25 число каждого месяца
         </p>
       </div>
- 
+
       <div class="i-card">
         <div class="i-title">📲 Как добавить на экран телефона</div>
         <p>
@@ -354,7 +354,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
           Кнопка «Поделиться» □↑ → «На экран Домой»
         </p>
       </div>
- 
+
       <div class="i-card">
         <div class="i-title">🔒 Конфиденциальность</div>
         <p>
@@ -363,22 +363,22 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
           Каждый пользователь видит только свои данные.
         </p>
       </div>
- 
+
       <div style="text-align:center;font-size:12px;color:var(--text3);padding:10px 0 4px">
         Версия 1.1 · Данные хранятся на устройстве
       </div>
     </div>
   </div>
- 
+
 </div>
- 
+
 <!-- НИЖНЕЕ МЕНЮ -->
 <div class="bnav">
   <button class="nb active" id="nav-main" onclick="showPage('main')"><span class="i">🏠</span><span>Главная</span></button>
   <button class="nb" id="nav-history" onclick="showPage('history')"><span class="i">📋</span><span>История</span></button>
   <button class="nb" id="nav-info" onclick="showPage('info')"><span class="i">ℹ️</span><span>О приложении</span></button>
 </div>
- 
+
 <!-- НАСТРОЙКИ -->
 <div class="overlay" id="sModal">
   <div class="modal">
@@ -407,7 +407,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'PT Sans',sans-seri
     <button class="save-btn" onclick="saveS()">Сохранить</button>
   </div>
 </div>
- 
+
 <script>
 // ── данные ──────────────────────────────────────
 const METERS = {
@@ -417,13 +417,13 @@ const METERS = {
   esp_hot:    {label:'Горячая вода', unit:'м³'},
   esp_cold:   {label:'Холодная вода',unit:'м³'},
 };
- 
+
 function cfg()  { return JSON.parse(localStorage.getItem('cfg')  || '{"tariff":"single","notify":"yes","name":""}') }
 function savCfg(c){ localStorage.setItem('cfg', JSON.stringify(c)) }
 function hist() { return JSON.parse(localStorage.getItem('hist') || '{}') }
 function savHist(h){ localStorage.setItem('hist', JSON.stringify(h)) }
 function curM() { return new Date().toISOString().slice(0,7) }
- 
+
 // ── старт ────────────────────────────────────────
 window.addEventListener('load', () => {
   const c = cfg();
@@ -437,7 +437,7 @@ window.addEventListener('load', () => {
   showNbar();
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
 });
- 
+
 // ── баннер ────────────────────────────────────────
 function drawBanner() {
   const d = new Date().getDate();
@@ -470,7 +470,7 @@ function drawBanner() {
   }
   el.innerHTML = h;
 }
- 
+
 // ── тариф ─────────────────────────────────────────
 function setTariff(type, silent) {
   const c = cfg(); c.tariff = type;
@@ -480,7 +480,7 @@ function setTariff(type, silent) {
   document.getElementById('t-single').classList.toggle('active', type === 'single');
   document.getElementById('t-two').classList.toggle('active',    type === 'two');
 }
- 
+
 // ── раскрытие карточки ────────────────────────────
 function toggle(id) {
   const body = document.getElementById('body-' + id);
@@ -489,7 +489,7 @@ function toggle(id) {
   body.classList.toggle('open', !was);
   hdr.classList.toggle('open',  !was);
 }
- 
+
 // ── ввод показания ────────────────────────────────
 function onInp(el, key) {
   el.classList.toggle('filled', el.value.length > 0);
@@ -501,7 +501,7 @@ function onInp(el, key) {
   refreshBadges();
   updateDiff(key, el.value);
 }
- 
+
 // ── разница с прошлым месяцем ─────────────────────
 function updateDiff(key, curVal) {
   const el = document.getElementById('diff-' + key);
@@ -527,7 +527,7 @@ function updateDiff(key, curVal) {
     el.className = 'm-diff zero';
   }
 }
- 
+
 // ── предыдущий месяц ──────────────────────────────
 function fillPrev() {
   const h = hist();
@@ -540,7 +540,7 @@ function fillPrev() {
       ? 'Пред. месяц: ' + h[prev][key] + ' ' + METERS[key].unit : '';
   });
 }
- 
+
 // ── восстановить поля текущего месяца ─────────────
 function restoreMonth() {
   const h = hist(); const m = curM();
@@ -550,18 +550,18 @@ function restoreMonth() {
     if (el && h[m][key]) { el.value = h[m][key]; el.classList.add('filled'); }
   });
 }
- 
+
 // ── бейджи готовности ─────────────────────────────
 function refreshBadges() {
   const h = hist(); const m = curM(); const cur = h[m] || {};
   const c = cfg();
- 
+
   // электричество
   const tekKeys = c.tariff === 'two' ? ['tek_day','tek_night'] : ['tek_single'];
   const tb = document.getElementById('bdg-tek');
   if (tekKeys.every(k => cur[k])) { tb.textContent = '✓ Готово'; tb.className = 'badge done'; }
   else { tb.textContent = 'Открыть'; tb.className = 'badge idle'; }
- 
+
   // вода
   const wk = ['esp_hot','esp_cold'];
   const wb = document.getElementById('bdg-esp');
@@ -569,7 +569,7 @@ function refreshBadges() {
   else if (wk.some(k => cur[k])){ wb.textContent = 'Частично'; wb.className = 'badge part'; }
   else                           { wb.textContent = 'Открыть';  wb.className = 'badge idle'; }
 }
- 
+
 // ── история ───────────────────────────────────────
 function renderHist() {
   const h = hist();
@@ -593,14 +593,14 @@ function renderHist() {
     return `<div class="h-card"><div class="h-title">${title}</div>${rows}</div>`;
   }).join('');
 }
- 
+
 function clearH() {
   if (!confirm('Очистить всю историю показаний?')) return;
   localStorage.removeItem('hist');
   renderHist();
   toast('История очищена');
 }
- 
+
 // ── навигация ─────────────────────────────────────
 function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
@@ -609,7 +609,7 @@ function showPage(name) {
   document.getElementById('nav-' + name).classList.add('active');
   if (name === 'history') renderHist();
 }
- 
+
 // ── настройки ─────────────────────────────────────
 function openS() {
   const c = cfg();
@@ -632,7 +632,7 @@ function saveS() {
   toast('Настройки сохранены');
   refreshBadges();
 }
- 
+
 // ── уведомления ───────────────────────────────────
 function showNbar() {
   if (!('Notification' in window)) return;
@@ -654,7 +654,7 @@ function reqNotify(ex) {
     }
   });
 }
- 
+
 // ── тост ──────────────────────────────────────────
 function toast(msg) {
   const t = document.getElementById('toast');
@@ -662,7 +662,7 @@ function toast(msg) {
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2500);
 }
- 
+
 // закрыть модал по клику на фон
 document.getElementById('sModal').addEventListener('click', function(e) {
   if (e.target === this) closeS();
